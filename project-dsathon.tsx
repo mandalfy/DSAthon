@@ -145,24 +145,24 @@ const ProjectDSAthon: React.FC = () => {
             <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-lime-500 via-green-600 to-emerald-600 px-4 py-2 mb-8 animate-fade-in transform hover:scale-105 transition-all duration-300 [text-shadow:_3px_3px_6px_rgba(0,0,0,0.2)] hover:[text-shadow:_5px_5px_10px_rgba(0,0,0,0.3)] [transform-style:preserve-3d] [perspective:1000px] [transform:rotateX(10deg)] hover:[transform:rotateX(0deg)]">
               Welcome to Project DSAthon
             </h1>
-            <p className="text-xl mb-12 text-gray-600 transform [transform-style:preserve-3d] [perspective:1000px] [transform:translateZ(20px)] [text-shadow:_1px_1px_2px_rgba(0,0,0,0.2)]">Important Dates: February 15, 2025</p>
+            <p className="text-xl mb-12 text-emerald-600 transform [transform-style:preserve-3d] [perspective:1000px] [transform:translateZ(20px)] [text-shadow:_1px_1px_2px_rgba(0,0,0,0.2)]"> February 16 - March 23, 2025</p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-              <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
-                <div className="text-4xl font-bold text-green-600">{Math.floor((new Date('2025-02-15').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))}</div>
-                <div className="text-sm text-gray-600 font-medium">Days</div>
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-green-200">
+                <div className="text-5xl font-bold text-green-600">{Math.floor((new Date('2025-02-16').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))}</div>
+                <div className="text-sm text-gray-600 font-semibold">Days</div>
               </div>
-              <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
-                <div className="text-4xl font-bold text-green-600">{Math.floor((new Date('2025-02-15').getTime() - new Date().getTime()) / (1000 * 60 * 60)) % 24}</div>
-                <div className="text-sm text-gray-600 font-medium">Hours</div>
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-green-200">
+                <div className="text-5xl font-bold text-green-600">{Math.floor((new Date('2025-02-15').getTime() - new Date().getTime()) / (1000 * 60 * 60)) % 24}</div>
+                <div className="text-sm text-gray-600 font-semibold">Hours</div>
               </div>
-              <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
-                <div className="text-4xl font-bold text-green-600">{Math.floor((new Date('2025-02-15').getTime() - new Date().getTime()) / (1000 * 60)) % 60}</div>
-                <div className="text-sm text-gray-600 font-medium">Minutes</div>
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-green-200">
+                <div className="text-5xl font-bold text-green-600">{Math.floor((new Date('2025-02-15').getTime() - new Date().getTime()) / (1000 * 60)) % 60}</div>
+                <div className="text-sm text-gray-600 font-semibold">Minutes</div>
               </div>
-              <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
-                <div className="text-4xl font-bold text-green-600">{Math.floor((new Date('2025-02-15').getTime() - new Date().getTime()) / 1000) % 60}</div>
-                <div className="text-sm text-gray-600 font-medium">Seconds</div>
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 border-2 border-green-200">
+                <div className="text-5xl font-bold text-green-600">{Math.floor((new Date('2025-02-15').getTime() - new Date().getTime()) / 1000) % 60}</div>
+                <div className="text-sm text-gray-600 font-semibold">Seconds</div>
               </div>
             </div>
           </div>
@@ -171,35 +171,35 @@ const ProjectDSAthon: React.FC = () => {
         {/* Project Tracks Section */}
         <section className="py-20 px-4 bg-gradient-to-r from-green-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">Build the Future of Learning</h2>
+            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">Build the Future of Learning</h2>
             
-            <p className="text-xl mb-12 text-gray-600">
+            <p className="text-2xl mb-12 text-gray-600 font-medium">
               Create an intelligent tutoring platform using DSA
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-green-600 mb-4">
-                  <Users size={32} />
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <div className="text-green-600 mb-6">
+                  <Users size={48} className="animate-pulse" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">Personalized Learning</h3>
-                <p className="text-gray-600">Customized learning paths tailored to each user's pace and style</p>
+                <h3 className="text-2xl font-bold mb-4 text-green-600">Personalized Learning</h3>
+                <p className="text-gray-600 text-lg">Customized learning paths tailored to each user's pace and style</p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-green-600 mb-4">
-                  <Users size={32} />
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <div className="text-green-600 mb-6">
+                  <Users size={48} className="animate-pulse" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">Collaborative Groups</h3>
-                <p className="text-gray-600">Topic-based study groups for enhanced learning through collaboration</p>
+                <h3 className="text-2xl font-bold mb-4 text-green-600">Collaborative Groups</h3>
+                <p className="text-gray-600 text-lg">Topic-based study groups for enhanced learning through collaboration</p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-green-600 mb-4">
-                  <MessageCircle size={32} />
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <div className="text-green-600 mb-6">
+                  <MessageCircle size={48} className="animate-pulse" />
                 </div>
-                <h3 className="text-xl font-bold mb-4">Smart Feedback</h3>
-                <p className="text-gray-600">Real-time feedback system adapting to user sentiment and progress</p>
+                <h3 className="text-2xl font-bold mb-4 text-green-600">Smart Feedback</h3>
+                <p className="text-gray-600 text-lg">Real-time feedback system adapting to user sentiment and progress</p>
               </div>
             </div>
           </div>
@@ -207,95 +207,146 @@ const ProjectDSAthon: React.FC = () => {
         {/* Timeline Section */}
         <section id="timeline" className="py-20 px-4 bg-gradient-to-r from-green-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">Project Timeline</h2>
-            <p className="text-xl mb-12 text-gray-600 animate-slide-up">
-              Key milestones and deadlines for Project DSAthon
+            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">Project Timeline</h2>
+            <p className="text-2xl mb-12 text-gray-600 animate-slide-up font-medium">
+              Key milestones for Project DSAthon
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Phase 1: Project Launch */}
-              <div className="bg-gradient-to-br from-white to-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-green-600">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-4 h-4 bg-green-600 rounded-full animate-pulse-slow"></div>
-                  <h3 className="font-bold text-xl bg-gradient-to-r from-green-600 to-emerald-600 text-transparent bg-clip-text">Project Launch</h3>
+              <div className="relative bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-[0_15px_40px_rgb(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.25)] transition-all duration-300 group border-2 border-green-100">
+                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-24 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full group-hover:h-32 transition-all duration-300"></div>
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-bold bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">SESSION 1</h3>
+                  <time className="text-gray-500 font-medium mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    16th FEB, Sunday
+                  </time>
+                  <p className="text-gray-600">Orientation + Array</p>
                 </div>
-                <p className="text-gray-600 font-medium">March 1, 2025</p>
-                <p className="text-gray-600 mt-2">Opening ceremony and team assignments</p>
+                <div className="absolute -right-2 -bottom-2 w-24 h-24 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              {/* Phase 2: Design */}
-              <div className="bg-gradient-to-br from-white to-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-green-600">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-4 h-4 bg-green-600 rounded-full animate-pulse-slow"></div>
-                  <h3 className="font-bold text-xl bg-gradient-to-r from-green-600 to-emerald-600 text-transparent bg-clip-text">Design Phase</h3>
+              <div className="relative bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-[0_15px_40px_rgb(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.25)] transition-all duration-300 group border-2 border-green-100">
+                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-24 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full group-hover:h-32 transition-all duration-300"></div>
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-bold bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">SESSION 2</h3>
+                  <time className="text-gray-500 font-medium mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    17th FEB, Monday
+                  </time>
+                  <p className="text-gray-600">Strings</p>
                 </div>
-                <p className="text-gray-600 font-medium">March 15, 2025</p>
-                <p className="text-gray-600 mt-2">Architecture planning and UI mockups</p>
+                <div className="absolute -right-2 -bottom-2 w-24 h-24 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              {/* Phase 3: Development */}
-              <div className="bg-gradient-to-br from-white to-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-green-600">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-4 h-4 bg-green-600 rounded-full animate-pulse-slow"></div>
-                  <h3 className="font-bold text-xl bg-gradient-to-r from-green-600 to-emerald-600 text-transparent bg-clip-text">Development Sprint</h3>
+              <div className="relative bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-[0_15px_40px_rgb(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.25)] transition-all duration-300 group border-2 border-green-100">
+                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-24 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full group-hover:h-32 transition-all duration-300"></div>
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-bold bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">SESSION 3</h3>
+                  <time className="text-gray-500 font-medium mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    22nd FEB, Saturday
+                  </time>
+                  <p className="text-gray-600">Searching + Problem Practice</p>
                 </div>
-                <p className="text-gray-600 font-medium">April 1, 2025</p>
-                <p className="text-gray-600 mt-2">Core functionality implementation</p>
+                <div className="absolute -right-2 -bottom-2 w-24 h-24 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              {/* Phase 4: Testing */}
-              <div className="bg-gradient-to-br from-white to-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-green-600">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-4 h-4 bg-green-600 rounded-full animate-pulse-slow"></div>
-                  <h3 className="font-bold text-xl bg-gradient-to-r from-green-600 to-emerald-600 text-transparent bg-clip-text">Quality Assurance</h3>
+              <div className="relative bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-[0_15px_40px_rgb(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.25)] transition-all duration-300 group border-2 border-green-100">
+                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-24 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full group-hover:h-32 transition-all duration-300"></div>
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-bold bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">SESSION 4</h3>
+                  <time className="text-gray-500 font-medium mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    23rd FEB, Sunday
+                  </time>
+                  <p className="text-gray-600">Basic Recursion</p>
                 </div>
-                <p className="text-gray-600 font-medium">April 15, 2025</p>
-                <p className="text-gray-600 mt-2">Testing and performance tuning</p>
+                <div className="absolute -right-2 -bottom-2 w-24 h-24 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="relative bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-[0_15px_40px_rgb(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.25)] transition-all duration-300 group border-2 border-green-100">
+                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-24 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full group-hover:h-32 transition-all duration-300"></div>
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-bold bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">SESSION 5</h3>
+                  <time className="text-gray-500 font-medium mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    16th MAR, Sunday
+                  </time>
+                  <p className="text-gray-600">Stack</p>
+                </div>
+                <div className="absolute -right-2 -bottom-2 w-24 h-24 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="relative bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-[0_15px_40px_rgb(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.25)] transition-all duration-300 group border-2 border-green-100">
+                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-24 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full group-hover:h-32 transition-all duration-300"></div>
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-bold bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">SESSION 6</h3>
+                  <time className="text-gray-500 font-medium mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    17th MAR, Monday
+                  </time>
+                  <p className="text-gray-600">Queue</p>
+                </div>
+                <div className="absolute -right-2 -bottom-2 w-24 h-24 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="relative bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-[0_15px_40px_rgb(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.25)] transition-all duration-300 group border-2 border-green-100">
+                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-24 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full group-hover:h-32 transition-all duration-300"></div>
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-bold bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">SESSION 7</h3>
+                  <time className="text-gray-500 font-medium mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    22nd MAR, Saturday
+                  </time>
+                  <p className="text-gray-600">Linked List - Part 1</p>
+                </div>
+                <div className="absolute -right-2 -bottom-2 w-24 h-24 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              {/* Phase 5: Final Delivery */}
-              <div className="bg-gradient-to-br from-white to-green-50 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-l-4 border-green-600">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-4 h-4 bg-green-600 rounded-full animate-pulse-slow"></div>
-                  <h3 className="font-bold text-xl bg-gradient-to-r from-green-600 to-emerald-600 text-transparent bg-clip-text">Final Delivery</h3>
+              <div className="relative bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-[0_15px_40px_rgb(0,0,0,0.15)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.25)] transition-all duration-300 group border-2 border-green-100">
+                <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-24 bg-gradient-to-b from-green-400 to-emerald-600 rounded-full group-hover:h-32 transition-all duration-300"></div>
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-bold bg-gradient-to-br from-green-600 to-emerald-600 bg-clip-text text-transparent mb-3">SESSION 8</h3>
+                  <time className="text-gray-500 font-medium mb-3 flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    23rd MAR, Sunday
+                  </time>
+                  <p className="text-gray-600">Linked List - Part 2</p>
                 </div>
-                <p className="text-gray-600 font-medium">April 30, 2025</p>
-                <p className="text-gray-600 mt-2">Project demo and documentation</p>
+                <div className="absolute -right-2 -bottom-2 w-24 h-24 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Prerequisites Section */}
-        <section id="setup" className="py-20 px-4 bg-white">
+        <section id="setup" className="py-20 px-4 bg-gradient-to-br from-emerald-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-12 text-center animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">Prerequisites & Setup</h2>
+            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-12 text-center animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">Prerequisites & Setup</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="text-2xl font-bold mb-6 text-green-600">Required Tools</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-center space-x-3">
-                    <Code size={20} className="text-green-600" />
-                    <span>Visual Studio Code</span>
+              <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-3xl font-bold mb-6 text-green-600">Required Tools</h3>
+                <ul className="space-y-6">
+                  <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
+                    <Code size={24} className="text-green-600" />
+                    <span className="text-lg">Visual Studio Code</span>
                   </li>
-                  <li className="flex items-center space-x-3">
-                    <Code size={20} className="text-green-600" />
-                    <span>Git Bash</span>
+                  <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
+                    <Code size={24} className="text-green-600" />
+                    <span className="text-lg">Git Bash</span>
                   </li>
-                  <li className="flex items-center space-x-3">
-                    <Code size={20} className="text-green-600" />
-                    <span>MinGW</span>
+                  <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
+                    <Code size={24} className="text-green-600" />
+                    <span className="text-lg">MinGW</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="text-2xl font-bold mb-6 text-green-600">Required Accounts</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-center space-x-3">
-                    <Code size={20} className="text-green-600" />
-                    <span>GitHub Account</span>
+              <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-3xl font-bold mb-6 text-green-600">Required Accounts</h3>
+                <ul className="space-y-6">
+                  <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
+                    <Code size={24} className="text-green-600" />
+                    <span className="text-lg">GitHub Account</span>
                   </li>
                 </ul>
               </div>
@@ -306,62 +357,101 @@ const ProjectDSAthon: React.FC = () => {
         {/* FAQ Section */}
         <section id="faq" className="py-20 px-4 bg-gradient-to-b from-green-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] text-center">Frequently Asked Questions</h2>
-            <p className="text-xl mb-12 text-center text-gray-600">
+            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)] text-center">Frequently Asked Questions</h2>
+            <p className="text-2xl mb-12 text-center text-gray-600">
               Find answers to common questions about Project DSAthon
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold mb-4 text-green-600">How to choose a project?</h3>
-                <p className="text-gray-600">
-                  Select based on your interests and skill level. Consider the technology stack and project complexity.
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-2xl font-bold mb-4 text-green-600">What is the Minimum Guaranteed Wage (Min GW)?</h3>
+                <p className="text-gray-600 text-lg">
+                The Minimum Guaranteed Wage refers to the lowest amount an employer is legally required to pay employees, ensuring a basic standard of living.
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold mb-4 text-green-600">Can I pick both projects?</h3>
-                <p className="text-gray-600">
-                  We recommend focusing on one project to ensure quality delivery and deep learning.
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-2xl font-bold mb-4 text-green-600">How is the Minimum Guaranteed Wage determined?</h3>
+                <p className="text-gray-600 text-lg">
+                It is typically set by the government based on economic conditions, cost of living, inflation, and labor market conditions.
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold mb-4 text-green-600">What programming languages can I use?</h3>
-                <p className="text-gray-600">
-                  You can use any mainstream programming language, but we recommend Python, Java, or JavaScript for better community support.
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-2xl font-bold mb-4 text-green-600">What is the Digital Services Act (DSA)?
+                </h3>
+                <p className="text-gray-600 text-lg">
+                The DSA is an EU regulation aimed at increasing transparency, accountability, and safety in digital platforms and online services.
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold mb-4 text-green-600">Is there a team size limit?</h3>
-                <p className="text-gray-600">
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-2xl font-bold mb-4 text-green-600">Is there a team size limit?</h3>
+                <p className="text-gray-600 text-lg">
                   Teams can have 2-4 members. Solo participation is also allowed but team collaboration is encouraged.
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold mb-4 text-green-600">What support is available?</h3>
-                <p className="text-gray-600">
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-2xl font-bold mb-4 text-green-600">What support is available?</h3>
+                <p className="text-gray-600 text-lg">
                   We provide mentorship, technical documentation, and community support through Discord and forums.
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold mb-4 text-green-600">Are there any prerequisites?</h3>
-                <p className="text-gray-600">
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-2xl font-bold mb-4 text-green-600">Are there any prerequisites?</h3>
+                <p className="text-gray-600 text-lg">
                   Basic programming knowledge and familiarity with data structures and algorithms is required.
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow md:col-span-2">
-                <h3 className="text-xl font-bold mb-4 text-green-600">
-                  I use a different tech stack than the ones taught
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-2xl font-bold mb-4 text-green-600">I use a different tech stack than the ones taught
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-lg">
                   That's fine! You can implement the project using your preferred tech stack as long as you meet the
                   requirements.
                 </p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <h3 className="text-2xl font-bold mb-4 text-green-600">How does the DSA impact social media platforms?</h3>
+                <p className="text-gray-600 text-lg">
+                Social media companies must take stronger action against illegal content, misinformation, and harmful activities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Learning Resources Section */}
+        <section className="py-20 px-4 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] text-center">Pre-requisite Resources</h2>
+            <p className="text-lg text-gray-600 text-center mb-12">
+              Essential learning materials and video tutorials to help you prepare for the challenge.
+            </p>
+
+            <div className="grid grid-cols-1 gap-8">
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <div className="flex items-center mb-6">
+                  <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
+                  <h3 className="text-2xl font-bold text-green-600">Data Structures Basics</h3>
+                </div>
+                <p className="text-gray-600 mb-6 text-lg">
+                  Introduction to fundamental data structures concepts.
+                </p>
+                <a href="https://youtu.be/EAR7De6Goz4?si=CBgdw--ZGuQPKS5i" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">Watch Video →</a>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <div className="flex items-center mb-6">
+                  <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
+                  <h3 className="text-2xl font-bold text-green-600">Algorithm Analysis</h3>
+                </div>
+                <p className="text-gray-600 mb-6 text-lg">
+                  Learn about time complexity and algorithm efficiency.
+                </p>
+                <a href="https://youtu.be/1jCFUv-Xlqo?si=RlSVwNNNYUgPuPeL" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">Watch Video →</a>
               </div>
             </div>
           </div>
