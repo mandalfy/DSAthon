@@ -354,6 +354,40 @@ const ProjectDSAthon: React.FC = () => {
           </div>
         </section>
 
+         {/* Learning Resources Section */}
+         <section className="py-20 px-4 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] text-center">Pre-requisite Resources</h2>
+            <p className="text-lg text-gray-600 text-center mb-12">
+              Essential learning materials and video tutorials to help you prepare for the challenge.
+            </p>
+
+            <div className="grid grid-cols-1 gap-8">
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <div className="flex items-center mb-6">
+                  <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
+                  <h3 className="text-2xl font-bold text-green-600">Data Structures Basics</h3>
+                </div>
+                <p className="text-gray-600 mb-6 text-lg">
+                  Introduction to fundamental data structures concepts.
+                </p>
+                <a href="https://youtu.be/EAR7De6Goz4?si=CBgdw--ZGuQPKS5i" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">Watch Video →</a>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <div className="flex items-center mb-6">
+                  <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
+                  <h3 className="text-2xl font-bold text-green-600">Algorithm Analysis</h3>
+                </div>
+                <p className="text-gray-600 mb-6 text-lg">
+                  Learn about time complexity and algorithm efficiency.
+                </p>
+                <a href="https://youtu.be/1jCFUv-Xlqo?si=RlSVwNNNYUgPuPeL" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">Watch Video →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section id="faq" className="py-20 px-4 bg-gradient-to-b from-green-50 to-white">
           <div className="max-w-7xl mx-auto">
@@ -423,39 +457,7 @@ const ProjectDSAthon: React.FC = () => {
             </div>
           </div>
         </section>
-        {/* Learning Resources Section */}
-        <section className="py-20 px-4 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] text-center">Pre-requisite Resources</h2>
-            <p className="text-lg text-gray-600 text-center mb-12">
-              Essential learning materials and video tutorials to help you prepare for the challenge.
-            </p>
-
-            <div className="grid grid-cols-1 gap-8">
-              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <div className="flex items-center mb-6">
-                  <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
-                  <h3 className="text-2xl font-bold text-green-600">Data Structures Basics</h3>
-                </div>
-                <p className="text-gray-600 mb-6 text-lg">
-                  Introduction to fundamental data structures concepts.
-                </p>
-                <a href="https://youtu.be/EAR7De6Goz4?si=CBgdw--ZGuQPKS5i" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">Watch Video →</a>
-              </div>
-
-              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <div className="flex items-center mb-6">
-                  <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
-                  <h3 className="text-2xl font-bold text-green-600">Algorithm Analysis</h3>
-                </div>
-                <p className="text-gray-600 mb-6 text-lg">
-                  Learn about time complexity and algorithm efficiency.
-                </p>
-                <a href="https://youtu.be/1jCFUv-Xlqo?si=RlSVwNNNYUgPuPeL" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">Watch Video →</a>
-              </div>
-            </div>
-          </div>
-        </section>
+       
 
         {/* Community Section */}
         <section className="py-20 px-4 bg-gradient-to-b from-white to-green-50">
