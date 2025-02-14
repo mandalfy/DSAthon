@@ -9,6 +9,25 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'bg-gradient-to-r',
+    'from-emerald-50',
+    'via-teal-50',
+    'to-green-50',
+    'from-emerald-400',
+    'via-teal-300',
+    'to-emerald-400',
+    'from-lime-500',
+    'via-green-600',
+    'to-emerald-600',
+    'from-green-50',
+    'via-white',
+    'to-green-50',
+    'from-green-50',
+    'to-white',
+    'from-white',
+    'to-green-50'
+  ],
   theme: {
     extend: {
       animation: {
