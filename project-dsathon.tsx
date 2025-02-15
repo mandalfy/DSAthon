@@ -177,10 +177,10 @@ const ProjectDSAthon: React.FC = () => {
         {/* Project Tracks Section */}
         <section className="py-20 px-4 bg-gradient-to-r from-green-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">Build the Future of Learning</h2>
+            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">JOIN US ON DSA-THON</h2>
             
             <p className="text-2xl mb-12 text-gray-600 font-medium">
-              Create an intelligent tutoring platform using DSA
+              
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -324,7 +324,9 @@ const ProjectDSAthon: React.FC = () => {
           </div>
         </section> */}
 
-        <CurvedTimeline />
+        <div id="timeline">
+          <CurvedTimeline />
+        </div>
 
         {/* Prerequisites Section */}
         <section id="setup" className="py-20 px-4 bg-gradient-to-br from-emerald-50 to-white">
@@ -337,15 +339,21 @@ const ProjectDSAthon: React.FC = () => {
                 <ul className="space-y-6">
                   <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
                     <Code size={24} className="text-green-600" />
-                    <span className="text-lg">Visual Studio Code</span>
+                    <a href="https://code.visualstudio.com/" target="_blank">
+                      <span className="text-lg cursor-pointer">Visual Studio Code</span>
+                    </a>
                   </li>
                   <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
                     <Code size={24} className="text-green-600" />
-                    <span className="text-lg">Git Bash</span>
+                    <a href="https://git-scm.com/downloads" target="_blank">
+                      <span className="text-lg cursor-pointer">Git Bash</span>
+                    </a>
                   </li>
                   <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
                     <Code size={24} className="text-green-600" />
-                    <span className="text-lg">MinGW</span>
+                    <a href="https://sourceforge.net/projects/mingw/" target="_blank">
+                      <span className="text-lg cursor-pointer">MinGW</span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -355,7 +363,9 @@ const ProjectDSAthon: React.FC = () => {
                 <ul className="space-y-6">
                   <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
                     <Code size={24} className="text-green-600" />
-                    <span className="text-lg">GitHub Account</span>
+                    <a href="https://github.com/" target="_blank">
+                      <span className="text-lg cursor-pointer">GitHub Account</span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -380,7 +390,7 @@ const ProjectDSAthon: React.FC = () => {
                 <p className="text-gray-600 mb-6 text-lg">
                   Introduction to fundamental data structures concepts.
                 </p>
-                <a href="https://youtu.be/EAR7De6Goz4?si=CBgdw--ZGuQPKS5i" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">Watch Video →</a>
+                <a href="https://www.youtube.com/watch?v=rlZpZ8es_6k&list=PLqM7alHXFySF7JxK9E24C-ZeNAXFB1u8k" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline" target="_blank">Watch Video →</a>
               </div>
 
               <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
@@ -391,7 +401,7 @@ const ProjectDSAthon: React.FC = () => {
                 <p className="text-gray-600 mb-6 text-lg">
                   Learn about time complexity and algorithm efficiency.
                 </p>
-                <a href="https://youtu.be/1jCFUv-Xlqo?si=RlSVwNNNYUgPuPeL" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline">Watch Video →</a>
+                <a href="https://www.youtube.com/watch?v=jOMxKsUd6e0" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline" target="_blank">Watch Video →</a>
               </div>
             </div>
           </div>
