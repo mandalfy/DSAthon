@@ -26,6 +26,7 @@ import { Menu, Instagram, Twitter, Linkedin, MessageCircle, Code, Users, Clock, 
 //Internal imports
 import Countdown from "./components/basicComponents/CountDown"
 import CurvedTimeline from "./components/basicComponents/CurvedTimeLine"
+import HeroSection from "./components/basicComponents/HeroSection"
 
 interface CountdownState {
   days: number;
@@ -161,18 +162,29 @@ const ProjectDSAthon: React.FC = () => {
       {/* Main Content */}
       <main className="pt-16">
         {/* Hero Section with Timer */}
-        <section className="flex items-center justify-center bg-gradient-to-b from-green-50 via-white to-green-50 h-screen">
+        {/* <section 
+          className="flex items-center justify-center h-screen" 
+          style={{
+            background: '#11998e',
+            background: 'linear-gradient(to right, #38ef7d, #11998e)'
+          }}
+        >
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-lime-500 via-green-600 to-emerald-600 px-4 py-2 mb-8 animate-fade-in transform hover:scale-105 transition-all duration-300 [text-shadow:_3px_3px_6px_rgba(0,0,0,0.2)] hover:[text-shadow:_5px_5px_10px_rgba(0,0,0,0.3)] [transform-style:preserve-3d] [perspective:1000px] [transform:rotateX(10deg)] hover:[transform:rotateX(0deg)]">
               Welcome to Project DSAthon
             </h1>
-            <p className="text-xl mb-12 text-emerald-600 transform [transform-style:preserve-3d] [perspective:1000px] [transform:translateZ(20px)] [text-shadow:_1px_1px_2px_rgba(0,0,0,0.2)]"> February 16 - March 23, 2025</p>
-
+            <p className="text-xl mb-12 text-emerald-600 transform [transform-style:preserve-3d] [perspective:1000px] [transform:translateZ(20px)] [text-shadow:_1px_1px_2px_rgba(0,0,0,0.2)]">
+              February 16 - March 23, 2025
+            </p>
             <div className="flex justify-center items-center">
               <Countdown />
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <div id="hero">
+          <HeroSection />
+        </div>
 
         {/* Project Tracks Section */}
         <section className="py-20 px-4 bg-gradient-to-r from-green-50 to-white">
