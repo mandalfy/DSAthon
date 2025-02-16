@@ -22,7 +22,10 @@ const gradientStyle = {
 
 import { useState, useEffect } from "react"
 import { Menu, Instagram, Twitter, Linkedin, MessageCircle, Code, Users, Clock, BookOpen, Calendar, CheckCircle } from "lucide-react"
+
 import Link from "next/link"
+=======
+
 
 //Internal imports
 import Countdown from "./components/basicComponents/CountDown"
@@ -361,9 +364,12 @@ const ProjectDSAthon: React.FC = () => {
         </section>
 
         {/* FAQ Section */}
+
         <div id="faq">
           <FAQSection />
         </div>
+=======
+        <FAQSection />
 
         {/* Community Section */}
         <section className="py-20 px-4 bg-gradient-to-b from-white to-green-50">

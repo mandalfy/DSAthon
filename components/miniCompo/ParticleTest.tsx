@@ -1,9 +1,14 @@
 "use client";
 
+
 import { color } from 'framer-motion';
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { text } from 'stream/consumers';
+=======
+import React from 'react';
+import { useEffect, useState } from 'react';
+
 
 const ParticleText = () => {
   const [particles, setParticles] = useState([]);
@@ -22,6 +27,7 @@ const ParticleText = () => {
 
   return (
     <div className="relative group">
+
       <h1 className="text-7xl font-extrabold text-white px-4 py-2 mb-8"
         style={{ textShadow: '0 10px 20px rgba(0,0,0,0.4)' }}>
         A <span style={{ 
@@ -31,6 +37,10 @@ const ParticleText = () => {
           color: "#55d017", 
           textShadow: "0.5px 0.5px 0 black, -0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px -0.5px 0 black" 
         }}>GFG</span> Event
+=======
+      <h1 className="text-7xl font-extrabold text-white px-4 py-2 mb-8">
+        Welcome to Project DSAthon
+
       </h1>
       
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
