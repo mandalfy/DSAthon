@@ -22,6 +22,7 @@ const gradientStyle = {
 
 import { useState, useEffect } from "react"
 import { Menu, Instagram, Twitter, Linkedin, MessageCircle, Code, Users, Clock, BookOpen, Calendar, CheckCircle } from "lucide-react"
+import Link from "next/link"
 
 //Internal imports
 import Countdown from "./components/basicComponents/CountDown"
@@ -68,98 +69,9 @@ const ProjectDSAthon: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 backdrop-blur-sm border-b border-emerald-200 shadow-lg z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo/Brand */}
-            <div className="flex-1 flex items-center space-x-8 relative">
-              <div className="relative group z-10">
-                <span className="font-extrabold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 hover:scale-105 transform transition-all duration-500 cursor-pointer">
-                  Project DSAthon
-                </span>
-                <div className="absolute -bottom-1 left-0 w-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 group-hover:w-full transition-all duration-500 ease-in-out"></div>
-              </div>
-              <div>
-                <span>
-                  <span></span>
-                </span>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-100/90 via-white/90 to-gray-100/90 blur-xl -z-10 rounded-3xl"></div>
-              <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-gray-50/40 to-white/40 backdrop-blur-md -z-5 rounded-3xl"></div>
-            </div>
+      
 
-            {/* main logo */}
-            <div className="flex-1 flex justify-center transition-transform duration-300 hover:scale-105">
-              <img src="/assets/gfgSVG.png" alt="" className="h-12 w-auto" />
-            </div>
-
-            {/* Desktop Navigation */}
-            <div className="flex-1 hidden md:flex items-center justify-end space-x-12">
-              <a href="#timeline" className="group flex items-center space-x-3 text-gray-600 hover:text-emerald-600 transition-all duration-300">
-                <Clock className="w-5 h-5 text-pink-500 group-hover:rotate-12 transform transition-all duration-500" />
-                <span className="font-semibold group-hover:translate-x-1 transition-transform duration-300 relative">
-                  Timeline
-                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-pink-500 group-hover:w-full transition-all duration-300"></div>
-                </span>
-              </a>
-              <a href="#setup" className="group flex items-center space-x-3 text-gray-600 hover:text-emerald-600 transition-all duration-300">
-                <Code className="w-5 h-5 text-violet-500 group-hover:scale-110 transform transition-all duration-500" />
-                <span className="font-semibold group-hover:translate-x-1 transition-transform duration-300 relative">
-                  Setup
-                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-violet-500 group-hover:w-full transition-all duration-300"></div>
-                </span>
-              </a>
-              <a href="#faq" className="group flex items-center space-x-3 text-gray-600 hover:text-emerald-600 transition-all duration-300">
-                <BookOpen className="w-5 h-5 text-sky-500 group-hover:-translate-y-1 transform transition-all duration-500" />
-                <span className="font-semibold group-hover:translate-x-1 transition-transform duration-300 relative">
-                  FAQ
-                  <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-sky-500 group-hover:w-full transition-all duration-300"></div>
-                </span>
-              </a>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
-              <button
-                className="p-4 rounded-lg bg-gradient-to-r from-emerald-400 to-teal-400 hover:from-emerald-500 hover:to-teal-500 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-              >
-                <Menu className="h-6 w-6 text-white" />
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className="md:hidden py-6 space-y-3 border-t border-emerald-500/20 bg-gradient-to-b from-emerald-400/95 via-teal-300/95 to-emerald-400/95 backdrop-blur-lg animate-slide-up rounded-b-2xl shadow-xl">
-              <a
-                href="#timeline"
-                className="flex items-center space-x-3 px-8 py-5 text-white hover:bg-white/20 hover:text-pink-200 rounded-xl transition-all duration-300 group"
-              >
-                <Clock className="w-5 h-5 text-pink-200 group-hover:rotate-12 transition-transform duration-500" />
-                <span className="font-semibold">Timeline</span>
-              </a>
-              <a
-                href="#setup"
-                className="flex items-center space-x-3 px-8 py-5 text-white hover:bg-white/20 hover:text-purple-200 rounded-xl transition-all duration-300 group"
-              >
-                <Code className="w-5 h-5 text-purple-200 group-hover:scale-110 transition-transform duration-500" />
-                <span className="font-semibold">Setup</span>
-              </a>
-              <a
-                href="#faq"
-                className="flex items-center space-x-3 px-8 py-5 text-white hover:bg-white/20 hover:text-blue-200 rounded-xl transition-all duration-300 group"
-              >
-                <BookOpen className="w-5 h-5 text-blue-200 group-hover:-translate-y-1 transition-transform duration-500" />
-                <span className="font-semibold">FAQ</span>
-              </a>
-            </div>
-          )}
-        </div>
-      </nav>
       <div className="fixed inset-0 -z-10 bg-gradient-to-br from-emerald-50 via-teal-50/50 to-green-50/80" />
-
-
       {/* Main Content */}
       <main className="pt-16">
         {/* Hero Section with Timer */}
@@ -386,6 +298,18 @@ const ProjectDSAthon: React.FC = () => {
                       <span className="text-lg cursor-pointer">GitHub Account</span>
                     </a>
                   </li>
+                  <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
+                    <Code size={24} className="text-green-600" />
+                    <a href="https://www.geeksforgeeks.org/" target="_blank">
+                      <span className="text-lg cursor-pointer">GeeksforGeeks Account</span>
+                    </a>
+                  </li>
+                  <li className="flex items-center space-x-4 hover:translate-x-2 transition-transform">
+                    <Code size={24} className="text-green-600" />
+                    <a href="https://leetcode.com/" target="_blank">
+                      <span className="text-lg cursor-pointer">LeetCode</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -401,6 +325,16 @@ const ProjectDSAthon: React.FC = () => {
             </p>
 
             <div className="grid grid-cols-1 gap-8">
+              <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
+                <div className="flex items-center mb-6">
+                  <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
+                  <h3 className="text-2xl font-bold text-green-600">Basic C++ Commands</h3>
+                </div>
+                <p className="text-gray-600 mb-6 text-lg">
+                  Understanding of Basic C++ Commands
+                </p>
+                <a href="https://www.youtube.com/watch?v=EAR7De6Goz4&t=250s" className="inline-block text-green-600 hover:text-green-700 text-lg font-semibold hover:underline" target="_blank">Watch Video →</a>
+              </div>
               <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
                 <div className="flex items-center mb-6">
                   <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
@@ -427,12 +361,14 @@ const ProjectDSAthon: React.FC = () => {
         </section>
 
         {/* FAQ Section */}
-        <FAQSection />
+        <div id="faq">
+          <FAQSection />
+        </div>
 
         {/* Community Section */}
         <section className="py-20 px-4 bg-gradient-to-b from-white to-green-50">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] text-center">Join Community</h2>
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md] text-center">Join GFG Community</h2>
 
             <div className="flex justify-center space-x-8 mb-12">
               <a
@@ -464,7 +400,7 @@ const ProjectDSAthon: React.FC = () => {
               </a>
             </div>
 
-            <p className="text-lg text-gray-600">Organized by GeeksforGeeks Chapters SNU</p>
+            <p className="text-lg text-gray-600">Organized by GeeksforGeeks Chapters SNU x SKEPSIS</p>
           </div>
         </section>
       </main>

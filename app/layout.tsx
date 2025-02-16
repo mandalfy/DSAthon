@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
+import Navbar from '../components/basicComponents/Navbar'
+
 export const metadata: Metadata = {
   title: 'GEEKSFORGEEKS',
   description: 'Created with v0',
   generator: 'v0.dev',
   icons: {
-    icon: './favIcon.ico'
+    icon: '/favIcon.ico',
   },
 }
 
@@ -17,7 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <link rel="icon" href="/favIcon.ico" type="image/x-icon" />
+      </head>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
