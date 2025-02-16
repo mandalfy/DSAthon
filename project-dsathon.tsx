@@ -103,15 +103,15 @@ const ProjectDSAthon: React.FC = () => {
         </div>
 
         {/* Project Tracks Section */}
-        <section className="py-20 px-4 bg-gradient-to-r from-green-50 to-white">
+        <section className="py-12 md:py-20 px-4 bg-gradient-to-r from-green-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">JOIN US ON DSA-THON</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">JOIN US ON DSA-THON</h2>
             
-            <p className="text-2xl mb-12 text-gray-600 font-medium">
+            <p className="text-xl md:text-2xl mb-8 md:mb-12 text-gray-600 font-medium">
               
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
                 <div className="text-green-600 mb-6">
                   <Calendar size={48} className="animate-pulse" />
@@ -263,11 +263,11 @@ const ProjectDSAthon: React.FC = () => {
         </div>
 
         {/* Prerequisites Section */}
-        <section id="setup" className="py-20 px-4 bg-gradient-to-br from-emerald-50 to-white">
+        <section id="setup" className="py-12 md:py-20 px-4 bg-gradient-to-br from-emerald-50 to-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-12 text-center animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">Prerequisites & Setup</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-8 md:mb-12 text-center animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)]">Prerequisites & Setup</h2>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
                 <h3 className="text-3xl font-bold mb-6 text-green-600">Required Tools</h3>
                 <ul className="space-y-6">
@@ -320,14 +320,14 @@ const ProjectDSAthon: React.FC = () => {
         </section>
 
          {/* Learning Resources Section */}
-         <section className="py-20 px-4 bg-white">
+         <section className="py-12 md:py-20 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] text-center">Pre-requisite Resources</h2>
-            <p className="text-lg text-gray-600 text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-4 md:mb-6 animate-fade-in drop-shadow-md hover:scale-105 transition-transform [text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] text-center">Pre-requisite Resources</h2>
+            <p className="text-base md:text-lg text-gray-600 text-center mb-8 md:mb-12">
               Essential learning materials and video tutorials to help you prepare for the challenge.
             </p>
 
-            <div className="grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-6 md:gap-8">
               <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
                 <div className="flex items-center mb-6">
                   <BookOpen className="w-12 h-12 text-green-600 mr-4 animate-pulse" />
@@ -372,11 +372,11 @@ const ProjectDSAthon: React.FC = () => {
         <FAQSection />
 
         {/* Community Section */}
-        <section className="py-20 px-4 bg-gradient-to-b from-white to-green-50">
+        <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-white to-green-50">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md] text-center">Join GFG Community</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-md text-center">Join GFG Community</h2>
 
-            <div className="flex justify-center space-x-8 mb-12">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-8 md:mb-12">
               <a
                 href="https://chat.whatsapp.com/FJX8ucNavszCQlTzYqRPFB"
                 className="text-green-600 hover:text-green-700 transform hover:scale-110 transition-transform"
@@ -406,7 +406,7 @@ const ProjectDSAthon: React.FC = () => {
               </a>
             </div>
 
-            <p className="text-lg text-gray-600">Organized by GeeksforGeeks Chapters SNU x SKEPSIS</p>
+            <p className="text-base md:text-lg text-gray-600">Organized by GeeksforGeeks Chapters SNU x SKEPSIS</p>
           </div>
         </section>
       </main>
