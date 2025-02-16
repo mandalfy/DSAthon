@@ -21,11 +21,13 @@ const gradientStyle = {
 }
 
 import { useState, useEffect } from "react"
-import { Menu, Instagram, Twitter, Linkedin, MessageCircle, Code, Users, Clock, BookOpen } from "lucide-react"
+import { Menu, Instagram, Twitter, Linkedin, MessageCircle, Code, Users, Clock, BookOpen, Calendar, CheckCircle } from "lucide-react"
 
 //Internal imports
 import Countdown from "./components/basicComponents/CountDown"
 import CurvedTimeline from "./components/basicComponents/CurvedTimeLine"
+import HeroSection from "./components/basicComponents/HeroSection"
+import FAQSection from "./components/basicComponents/FaqSection"
 
 interface CountdownState {
   days: number;
@@ -161,18 +163,29 @@ const ProjectDSAthon: React.FC = () => {
       {/* Main Content */}
       <main className="pt-16">
         {/* Hero Section with Timer */}
-        <section className="flex items-center justify-center bg-gradient-to-b from-green-50 via-white to-green-50 h-screen">
+        {/* <section 
+          className="flex items-center justify-center h-screen" 
+          style={{
+            background: '#11998e',
+            background: 'linear-gradient(to right, #38ef7d, #11998e)'
+          }}
+        >
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-lime-500 via-green-600 to-emerald-600 px-4 py-2 mb-8 animate-fade-in transform hover:scale-105 transition-all duration-300 [text-shadow:_3px_3px_6px_rgba(0,0,0,0.2)] hover:[text-shadow:_5px_5px_10px_rgba(0,0,0,0.3)] [transform-style:preserve-3d] [perspective:1000px] [transform:rotateX(10deg)] hover:[transform:rotateX(0deg)]">
               Welcome to Project DSAthon
             </h1>
-            <p className="text-xl mb-12 text-emerald-600 transform [transform-style:preserve-3d] [perspective:1000px] [transform:translateZ(20px)] [text-shadow:_1px_1px_2px_rgba(0,0,0,0.2)]"> February 16 - March 23, 2025</p>
-
+            <p className="text-xl mb-12 text-emerald-600 transform [transform-style:preserve-3d] [perspective:1000px] [transform:translateZ(20px)] [text-shadow:_1px_1px_2px_rgba(0,0,0,0.2)]">
+              February 16 - March 23, 2025
+            </p>
             <div className="flex justify-center items-center">
               <Countdown />
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <div id="hero">
+          <HeroSection />
+        </div>
 
         {/* Project Tracks Section */}
         <section className="py-20 px-4 bg-gradient-to-r from-green-50 to-white">
@@ -186,26 +199,32 @@ const ProjectDSAthon: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
                 <div className="text-green-600 mb-6">
-                  <Users size={48} className="animate-pulse" />
+                  <Calendar size={48} className="animate-pulse" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-green-600">Personalized Learning</h3>
-                <p className="text-gray-600 text-lg">Customized learning paths tailored to each user's pace and style</p>
+                <h3 className="text-2xl font-bold mb-4 text-green-600">Weekend Live Sessions</h3>
+                <p className="text-gray-600 text-lg">
+                  Mentor-led interactive sessions covering essential Linear DSA concepts like Arrays, Linked Lists, Stacks, Queues, and more.
+                </p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
                 <div className="text-green-600 mb-6">
-                  <Users size={48} className="animate-pulse" />
+                  <BookOpen size={48} className="animate-pulse" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-green-600">Collaborative Groups</h3>
-                <p className="text-gray-600 text-lg">Topic-based study groups for enhanced learning through collaboration</p>
+                <h3 className="text-2xl font-bold mb-4 text-green-600">Practice & Reinforcement</h3>
+                <p className="text-gray-600 text-lg">
+                  Solve 35+ beginner-friendly coding problems from various platforms to strengthen problem-solving skills.
+                </p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
                 <div className="text-green-600 mb-6">
-                  <MessageCircle size={48} className="animate-pulse" />
+                  <CheckCircle size={48} className="animate-pulse" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-green-600">Smart Feedback</h3>
-                <p className="text-gray-600 text-lg">Real-time feedback system adapting to user sentiment and progress</p>
+                <h3 className="text-2xl font-bold mb-4 text-green-600">Confidence to Progress</h3>
+                <p className="text-gray-600 text-lg">
+                  Build a strong DSA foundation, making it easier to transition to advanced topics and interview prep.
+                </p>
               </div>
             </div>
           </div>
@@ -408,75 +427,7 @@ const ProjectDSAthon: React.FC = () => {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="py-20 px-4 bg-gradient-to-b from-green-50 to-white">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-600 mb-6 animate-fade-in drop-shadow-lg hover:scale-105 transition-transform [text-shadow:_4px_4px_8px_rgba(0,0,0,0.3)] text-center">Frequently Asked Questions</h2>
-            <p className="text-2xl mb-12 text-center text-gray-600">
-              Find answers to common questions about Project DSAthon
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <h3 className="text-2xl font-bold mb-4 text-green-600">What is the Minimum Guaranteed Wage (Min GW)?</h3>
-                <p className="text-gray-600 text-lg">
-                The Minimum Guaranteed Wage refers to the lowest amount an employer is legally required to pay employees, ensuring a basic standard of living.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <h3 className="text-2xl font-bold mb-4 text-green-600">How is the Minimum Guaranteed Wage determined?</h3>
-                <p className="text-gray-600 text-lg">
-                It is typically set by the government based on economic conditions, cost of living, inflation, and labor market conditions.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <h3 className="text-2xl font-bold mb-4 text-green-600">What is the Digital Services Act (DSA)?
-                </h3>
-                <p className="text-gray-600 text-lg">
-                The DSA is an EU regulation aimed at increasing transparency, accountability, and safety in digital platforms and online services.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <h3 className="text-2xl font-bold mb-4 text-green-600">Is there a team size limit?</h3>
-                <p className="text-gray-600 text-lg">
-                  Teams can have 2-4 members. Solo participation is also allowed but team collaboration is encouraged.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <h3 className="text-2xl font-bold mb-4 text-green-600">What support is available?</h3>
-                <p className="text-gray-600 text-lg">
-                  We provide mentorship, technical documentation, and community support through Discord and forums.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <h3 className="text-2xl font-bold mb-4 text-green-600">Are there any prerequisites?</h3>
-                <p className="text-gray-600 text-lg">
-                  Basic programming knowledge and familiarity with data structures and algorithms is required.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <h3 className="text-2xl font-bold mb-4 text-green-600">I use a different tech stack than the ones taught
-                </h3>
-                <p className="text-gray-600 text-lg">
-                  That's fine! You can implement the project using your preferred tech stack as long as you meet the
-                  requirements.
-                </p>
-              </div>
-              <div className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 transform hover:scale-105 border-2 border-green-200">
-                <h3 className="text-2xl font-bold mb-4 text-green-600">How does the DSA impact social media platforms?</h3>
-                <p className="text-gray-600 text-lg">
-                Social media companies must take stronger action against illegal content, misinformation, and harmful activities.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-       
+        <FAQSection />
 
         {/* Community Section */}
         <section className="py-20 px-4 bg-gradient-to-b from-white to-green-50">
@@ -522,3 +473,4 @@ const ProjectDSAthon: React.FC = () => {
 }
 
 export default ProjectDSAthon
+
